@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="btn">
+        <div class="btn__home">
+          <a class="btn__home_style" href="#">Home</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="title">
+        <p class="title__style">Our offer</p>
+      </div>
+      <section>
+        <div class="calculator">
+          <div class="calculator__condition">
+            <div>
+              <label class="subtitle" for="points">Amount requested</label>
+            </div>
+
+            <div class="amount">
+              <input
+                class="money"
+                type="range"
+                id="points"
+                name="points"
+                min="0"
+                max="5000"
+                value="100"
+              />
+              <p class="outMoney details_style"></p>
+            </div>
+
+            <div>
+              <label for="period">Choose period</label>
+            </div>
+            <div class="credit_period">
+              <input
+                class="period"
+                type="range"
+                id="period"
+                name="period"
+                min="1"
+                max="24"
+                value="1"
+              />
+              <p class="get_period details_style"></p>
+            </div>
+          </div>
+
+          <div class="conditions">
+            <div class="conditions__position">
+              <p>the whole amount</p>
+              <p class="out__put details_style"></p>
+            </div>
+
+            <div class="conditions__position">
+              <p>percent</p>
+              <p class="percent details_style"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="description">
+          <ul>
+            <li>minimum loan amount 100 $</li>
+            <li>maximum loan amount 5000 $</li>
+            <li>
+              if you take out a loan for a period of more than six months, the
+              interest rate drops by 0.5 percent
+            </li>
+            <li>
+              if you take out a loan for a period of more than twelve months,
+              the interest rate drops by 1 percent
+            </li>
+            <li>
+              if you take a loan for two years, the interest rate drops by 1.5
+              percent
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="site.js"></script>
+  </body>
+</html>

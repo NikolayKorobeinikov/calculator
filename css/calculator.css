@@ -1,0 +1,82 @@
+.header {
+  background-color: #f6f4f1;
+}
+.btn__home {
+  padding: 5px 10px;
+}
+.btn__home_style {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.title {
+  background-color: rgb(201, 203, 207);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 10px;
+}
+.calculator {
+  display: flex;
+  padding: 50px 50px;
+  gap: 100px;
+}
+.calculator__condition {
+  width: 400px;
+}
+.amount {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.credit_period {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.conditions {
+  display: flex;
+  gap: 50px;
+}
+.conditions__position {
+  text-align: center;
+}
+.subtitle {
+  font-size: 16px;
+}
+.details_style {
+  font-size: 24px;
+  font-weight: 700;
+}
+.money,
+.period {
+  -webkit-appearance: none;
+  background: rgb(124, 135, 144);
+  width: 50%;
+  height: 0.6rem;
+  border-radius: 20px;
+}
+.description {
+  padding: 0px 50px;
+}
+
+@media (max-width: 860px) {
+  .calculator {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 450px) {
+  .description {
+    padding: 0px 20px;
+  }
+  .calculator {
+    padding: 20px 20px;
+  }
+  .calculator__condition {
+    width: 320px;
+  }
+}
